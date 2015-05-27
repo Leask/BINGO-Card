@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,119 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-KB-Z26">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="de6-dh-XBf">
+                                <rect key="frame" x="16" y="28" width="568" height="552"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-Mw-QW0">
+                                        <rect key="frame" x="8" y="46" width="250" height="498"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="8RY-a2-LPq"/>
+                                            <constraint firstAttribute="width" constant="250" id="KWH-gG-yM6"/>
+                                        </constraints>
+                                        <string key="text">input
+words
+in
+this 
+list 
+then
+push 
+the 
+"Make"
+button
+to
+make
+a
+card</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8RY-a2-LPq"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-HP-Gnx">
+                                        <rect key="frame" x="121" y="8" width="137" height="30"/>
+                                        <state key="normal" title="Make BINGO CARD">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="makeBingo" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKu-6E-TRb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lrS-HP-Gnx" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="3PS-y1-o37"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLs-Mw-QW0" secondAttribute="trailing" constant="250" id="EAK-Il-vPa"/>
+                                    <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="OAT-0t-JmB"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLs-Mw-QW0" secondAttribute="bottom" constant="8" id="S2X-r6-fAe"/>
+                                    <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="46" id="SRk-BN-v0b"/>
+                                    <constraint firstAttribute="bottom" secondItem="lrS-HP-Gnx" secondAttribute="bottom" constant="8" id="b4s-qr-AVx"/>
+                                    <constraint firstItem="lrS-HP-Gnx" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="121" id="cSu-Pm-lSs"/>
+                                    <constraint firstItem="lrS-HP-Gnx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="de6-dh-XBf" secondAttribute="leading" constant="121" id="e6Y-JS-nFT"/>
+                                    <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="iX1-Hf-1bE"/>
+                                    <constraint firstItem="dLs-Mw-QW0" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="8" id="o4Q-N4-ngw"/>
+                                    <constraint firstItem="dLs-Mw-QW0" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="8" id="oDL-cF-YwN"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLs-Mw-QW0" secondAttribute="bottom" constant="46" id="rBM-Vl-4wB"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLs-Mw-QW0" secondAttribute="bottom" constant="46" id="vBr-mJ-1Qw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EAK-Il-vPa"/>
+                                        <exclude reference="OAT-0t-JmB"/>
+                                        <exclude reference="iX1-Hf-1bE"/>
+                                        <exclude reference="o4Q-N4-ngw"/>
+                                        <exclude reference="rBM-Vl-4wB"/>
+                                        <exclude reference="vBr-mJ-1Qw"/>
+                                        <exclude reference="b4s-qr-AVx"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="de6-dh-XBf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Vy-ye-F00"/>
+                            <constraint firstItem="de6-dh-XBf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JDn-lu-l7X"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="JsJ-rf-8JP"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="L5n-jW-cVU"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N1W-Xu-hUx"/>
+                            <constraint firstAttribute="centerY" secondItem="a5t-KB-Z26" secondAttribute="centerY" id="RT6-zk-yqC"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Tvq-ir-mPx"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="centerX" secondItem="de6-dh-XBf" secondAttribute="centerX" id="VvN-Gj-OCy"/>
+                            <constraint firstAttribute="centerX" secondItem="a5t-KB-Z26" secondAttribute="centerX" id="cqv-aQ-MPA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a5t-KB-Z26" secondAttribute="bottom" constant="20" id="ii2-Ck-lyN"/>
+                            <constraint firstItem="de6-dh-XBf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jFv-ET-Ihr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="bottom" constant="20" id="kOk-Xu-gvd"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="npA-Ie-ju2"/>
+                            <constraint firstItem="a5t-KB-Z26" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uF4-HU-1uS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L5n-jW-cVU"/>
+                                <exclude reference="RT6-zk-yqC"/>
+                                <exclude reference="Tvq-ir-mPx"/>
+                                <exclude reference="cqv-aQ-MPA"/>
+                                <exclude reference="npA-Ie-ju2"/>
+                                <exclude reference="ii2-Ck-lyN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bingoWebView" destination="a5t-KB-Z26" id="NfY-p3-iH1"/>
+                        <outlet property="controllersUIView" destination="de6-dh-XBf" id="XVc-Gw-L9H"/>
+                        <outlet property="wordsTextView" destination="dLs-Mw-QW0" id="LHs-qJ-AYr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="183" y="472"/>
         </scene>
     </scenes>
 </document>
