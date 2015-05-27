@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2227432C1B16345700C78A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227432B1B16345700C78A5F /* AppDelegate.swift */; };
+		2227432E1B16345700C78A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227432D1B16345700C78A5F /* ViewController.swift */; };
+		222743311B16345700C78A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2227432F1B16345700C78A5F /* Main.storyboard */; };
+		222743331B16345700C78A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222743321B16345700C78A5F /* Images.xcassets */; };
+		222743361B16345700C78A5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222743341B16345700C78A5F /* LaunchScreen.xib */; };
+		222743421B16345700C78A5F /* BINGO_CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222743411B16345700C78A5F /* BINGO_CardTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2227433C1B16345700C78A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2227431E1B16345700C78A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222743251B16345700C78A5F;
+			remoteInfo = "BINGO Card";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		222743261B16345700C78A5F /* BINGO Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BINGO Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2227432A1B16345700C78A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2227432B1B16345700C78A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2227432D1B16345700C78A5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		222743301B16345700C78A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		222743321B16345700C78A5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		222743351B16345700C78A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2227433B1B16345700C78A5F /* BINGO CardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BINGO CardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222743401B16345700C78A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222743411B16345700C78A5F /* BINGO_CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BINGO_CardTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		222743231B16345700C78A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222743381B16345700C78A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2227431D1B16345700C78A5F = {
+			isa = PBXGroup;
+			children = (
+				222743281B16345700C78A5F /* BINGO Card */,
+				2227433E1B16345700C78A5F /* BINGO CardTests */,
+				222743271B16345700C78A5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		222743271B16345700C78A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222743261B16345700C78A5F /* BINGO Card.app */,
+				2227433B1B16345700C78A5F /* BINGO CardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		222743281B16345700C78A5F /* BINGO Card */ = {
+			isa = PBXGroup;
+			children = (
+				2227432B1B16345700C78A5F /* AppDelegate.swift */,
+				2227432D1B16345700C78A5F /* ViewController.swift */,
+				2227432F1B16345700C78A5F /* Main.storyboard */,
+				222743321B16345700C78A5F /* Images.xcassets */,
+				222743341B16345700C78A5F /* LaunchScreen.xib */,
+				222743291B16345700C78A5F /* Supporting Files */,
+			);
+			path = "BINGO Card";
+			sourceTree = "<group>";
+		};
+		222743291B16345700C78A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2227432A1B16345700C78A5F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2227433E1B16345700C78A5F /* BINGO CardTests */ = {
+			isa = PBXGroup;
+			children = (
+				222743411B16345700C78A5F /* BINGO_CardTests.swift */,
+				2227433F1B16345700C78A5F /* Supporting Files */,
+			);
+			path = "BINGO CardTests";
+			sourceTree = "<group>";
+		};
+		2227433F1B16345700C78A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222743401B16345700C78A5F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		222743251B16345700C78A5F /* BINGO Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222743451B16345700C78A5F /* Build configuration list for PBXNativeTarget "BINGO Card" */;
+			buildPhases = (
+				222743221B16345700C78A5F /* Sources */,
+				222743231B16345700C78A5F /* Frameworks */,
+				222743241B16345700C78A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BINGO Card";
+			productName = "BINGO Card";
+			productReference = 222743261B16345700C78A5F /* BINGO Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2227433A1B16345700C78A5F /* BINGO CardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222743481B16345700C78A5F /* Build configuration list for PBXNativeTarget "BINGO CardTests" */;
+			buildPhases = (
+				222743371B16345700C78A5F /* Sources */,
+				222743381B16345700C78A5F /* Frameworks */,
+				222743391B16345700C78A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2227433D1B16345700C78A5F /* PBXTargetDependency */,
+			);
+			name = "BINGO CardTests";
+			productName = "BINGO CardTests";
+			productReference = 2227433B1B16345700C78A5F /* BINGO CardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2227431E1B16345700C78A5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Leask Wong";
+				TargetAttributes = {
+					222743251B16345700C78A5F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					2227433A1B16345700C78A5F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 222743251B16345700C78A5F;
+					};
+				};
+			};
+			buildConfigurationList = 222743211B16345700C78A5F /* Build configuration list for PBXProject "BINGO Card" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2227431D1B16345700C78A5F;
+			productRefGroup = 222743271B16345700C78A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222743251B16345700C78A5F /* BINGO Card */,
+				2227433A1B16345700C78A5F /* BINGO CardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		222743241B16345700C78A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222743311B16345700C78A5F /* Main.storyboard in Resources */,
+				222743361B16345700C78A5F /* LaunchScreen.xib in Resources */,
+				222743331B16345700C78A5F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222743391B16345700C78A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222743221B16345700C78A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2227432E1B16345700C78A5F /* ViewController.swift in Sources */,
+				2227432C1B16345700C78A5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222743371B16345700C78A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222743421B16345700C78A5F /* BINGO_CardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2227433D1B16345700C78A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222743251B16345700C78A5F /* BINGO Card */;
+			targetProxy = 2227433C1B16345700C78A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2227432F1B16345700C78A5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222743301B16345700C78A5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		222743341B16345700C78A5F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222743351B16345700C78A5F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		222743431B16345700C78A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222743441B16345700C78A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		222743461B16345700C78A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BINGO Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		222743471B16345700C78A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BINGO Card/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		222743491B16345700C78A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BINGO CardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BINGO Card.app/BINGO Card";
+			};
+			name = Debug;
+		};
+		2227434A1B16345700C78A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BINGO CardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BINGO Card.app/BINGO Card";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222743211B16345700C78A5F /* Build configuration list for PBXProject "BINGO Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222743431B16345700C78A5F /* Debug */,
+				222743441B16345700C78A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222743451B16345700C78A5F /* Build configuration list for PBXNativeTarget "BINGO Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222743461B16345700C78A5F /* Debug */,
+				222743471B16345700C78A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		222743481B16345700C78A5F /* Build configuration list for PBXNativeTarget "BINGO CardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222743491B16345700C78A5F /* Debug */,
+				2227434A1B16345700C78A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2227431E1B16345700C78A5F /* Project object */;
+}
