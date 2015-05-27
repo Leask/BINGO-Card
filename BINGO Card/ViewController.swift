@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         }
     
         html += "<th colspan=\"\(len)\" style=\"border: 1px solid\" height=\"\(100 / (len + 1))%\">"
-        html += "BINGO"
+        html += "B I N G O"
         html += "</th>"
         html += "</tr>"
 

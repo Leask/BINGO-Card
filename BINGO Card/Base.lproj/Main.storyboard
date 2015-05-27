@@ -25,7 +25,7 @@
                                 <rect key="frame" x="16" y="28" width="568" height="552"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-Mw-QW0">
-                                        <rect key="frame" x="8" y="46" width="250" height="498"/>
+                                        <rect key="frame" x="8" y="46" width="250" height="469"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="8RY-a2-LPq"/>
@@ -62,17 +62,26 @@ card</string>
                                             <action selector="makeBingo" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKu-6E-TRb"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for Eunice by @leaskh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-Kw-8eH">
+                                        <rect key="frame" x="89" y="523" width="169" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="lrS-HP-Gnx" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="3PS-y1-o37"/>
                                     <constraint firstAttribute="trailing" secondItem="dLs-Mw-QW0" secondAttribute="trailing" constant="250" id="EAK-Il-vPa"/>
+                                    <constraint firstAttribute="bottom" secondItem="RAQ-Kw-8eH" secondAttribute="bottom" constant="8" id="IMw-g9-EbW"/>
                                     <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="OAT-0t-JmB"/>
                                     <constraint firstAttribute="bottom" secondItem="dLs-Mw-QW0" secondAttribute="bottom" constant="8" id="S2X-r6-fAe"/>
                                     <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="46" id="SRk-BN-v0b"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLs-Mw-QW0" secondAttribute="bottom" constant="37" id="aqr-66-uYO"/>
                                     <constraint firstAttribute="bottom" secondItem="lrS-HP-Gnx" secondAttribute="bottom" constant="8" id="b4s-qr-AVx"/>
                                     <constraint firstItem="lrS-HP-Gnx" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="121" id="cSu-Pm-lSs"/>
                                     <constraint firstItem="lrS-HP-Gnx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="de6-dh-XBf" secondAttribute="leading" constant="121" id="e6Y-JS-nFT"/>
+                                    <constraint firstItem="RAQ-Kw-8eH" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="89" id="hoL-9J-oNl"/>
                                     <constraint firstItem="dLs-Mw-QW0" firstAttribute="top" secondItem="de6-dh-XBf" secondAttribute="top" constant="8" id="iX1-Hf-1bE"/>
                                     <constraint firstItem="dLs-Mw-QW0" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="8" id="o4Q-N4-ngw"/>
                                     <constraint firstItem="dLs-Mw-QW0" firstAttribute="leading" secondItem="de6-dh-XBf" secondAttribute="leading" constant="8" id="oDL-cF-YwN"/>
@@ -83,6 +92,7 @@ card</string>
                                     <mask key="constraints">
                                         <exclude reference="EAK-Il-vPa"/>
                                         <exclude reference="OAT-0t-JmB"/>
+                                        <exclude reference="S2X-r6-fAe"/>
                                         <exclude reference="iX1-Hf-1bE"/>
                                         <exclude reference="o4Q-N4-ngw"/>
                                         <exclude reference="rBM-Vl-4wB"/>
