@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         bingoWebView.hidden = true
     }
 
@@ -32,18 +32,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var bingoWebView: UIWebView!
     
     @IBAction func makeBingo() {
-        var inputWordsArray = wordsTextView.text!.componentsSeparatedByCharactersInSet(
+        let inputWordsArray = wordsTextView.text!.componentsSeparatedByCharactersInSet(
             NSCharacterSet (charactersInString: "\n")
         )
         var resultWordsArray = [String]()
         for word in inputWordsArray {
-            var trimWord = word.stringByTrimmingCharactersInSet(
+            let trimWord = word.stringByTrimmingCharactersInSet(
                 NSCharacterSet.whitespaceCharacterSet()
             )
             if trimWord != "" {
                 resultWordsArray.append(trimWord)
             }
-            println(trimWord)
+            print(trimWord)
         }
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         html += "<body style=\"text-align:center\">"
         html += "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" height=\"\(screenSize.height - 100)\" width=\"100%\">"
         html += "<tr>"
-        println(screenSize.height)
+        print(screenSize.height)
         var len = 1
         while len * len < resultWordsArray.count {
             len++
@@ -70,11 +70,13 @@ class ViewController: UIViewController {
         html += "</tr>"
 
 
-        var appendNum = len * len - resultWordsArray.count
-        for _ in 1...appendNum {
-            resultWordsArray.append("😀")
+        let appendNum = len * len - resultWordsArray.count
+        if appendNum > 0 {
+            for _ in 1...appendNum {
+                resultWordsArray.append("😀")
+            }
         }
-        
+            
         for idx in 0..<resultWordsArray.count {
             swap(&resultWordsArray[idx], &resultWordsArray[Int(arc4random_uniform(UInt32(idx)))])
         }
@@ -94,8 +96,8 @@ class ViewController: UIViewController {
         html += "</table>"
         html += "</body>"
         html += "</html>"
-        println(resultWordsArray)
-        println(html)
+        print(resultWordsArray)
+        print(html)
     
         bingoWebView.loadHTMLString(html, baseURL: nil)
         bingoWebView.hidden = false
@@ -103,7 +105,7 @@ class ViewController: UIViewController {
         wordsTextView.resignFirstResponder()
     }
     
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
             makeBingo()
         }
